@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "Gotham";
+	src: url("/Users/anastasia/Documents/moto/Gotham/gotham.woff2") format("woff2"),
+	url("/Users/anastasia/Documents/moto/Gotham/gotham.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham";
+	src: url("/Users/anastasia/Documents/moto/Gotham/gotham-Medium.woff2") format("woff2"),
+	url("/Users/anastasia/Documents/moto/Gotham/gotham_Medium.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Variables */
+:root {
+	--basic-black:#000000;
+	--basic-white: #FFFFFF;
+	--headlines: #272727;
+	--accent: #1E991B;
+}
+
+/* Global */
+body {
+min-width: 1440px;
+margin: 0;
+padding: 0;
+font-family: "Gotham", Arial, sans-serif;
+font-size: 16px;
+line-height: 19px;
+font-weight: 400;
+color: var(--basic-white);
+background-color: var(--basic-black);
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
