@@ -31,7 +31,7 @@ body {
 	font-family: "Gotham", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 19px;
-	font-weight: 400;
+	font-weight: 500;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 }
@@ -45,6 +45,13 @@ img {
 	height: auto;
 }
 
+.main-h1 {
+	font-size: 96px;
+	line-height: 115px;
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+
 h2 {
 	font-weight: 700;
 	font-size: 48px;
@@ -53,7 +60,7 @@ h2 {
 }
 
 .main-heder-logo {
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 32px;
 	line-height: 38px;
 	color: var(--basic-white);
@@ -64,9 +71,9 @@ span {
 	color: var(--accent);
 }
 
+
 /* Main navigation */
 .main-navigation {
-	font-weight: 500;
 	font-size: 20px;
 	line-height: 24px;
 	/*background-color: transparent;*/
@@ -74,7 +81,8 @@ span {
 }
 
 .site-navigation-wrapper,
-.for-partners {
+.for-partners,
+.navigation-social-networks {
 	list-style: none;
 	color: var(--basic-white);
 }
@@ -89,7 +97,6 @@ span {
 }
 
 .USP {
-	font-weight: 500;
 	font-size: 96px;
 	line-height: 115px;
 	color: var(--basic-white);
@@ -106,7 +113,6 @@ span {
 	background-color: var(--accent);
 }
 .main-products-items {
-	font-weight: 500;
 	font-size: 32px;
 	line-height: 38px;
 	list-style: none;
@@ -114,7 +120,6 @@ span {
 }
 
 .name-product {
-	font-weight: 500;
 	font-size: 36px;
 	line-height: 43px;
 	color: var(--basic-white);
@@ -132,7 +137,6 @@ span {
 }
 
 .characteristic {
-	font-weight: 500;
 	font-size: 20px;
 	line-height: 24px;
 	color: var(--basic-gray);
@@ -217,7 +221,6 @@ color: var(--basic-white);
 }
 
 .appointment-form-items {
-	font-weight: 500;
 	font-size: 20px;
 	line-height: 24px;
 }
@@ -242,4 +245,59 @@ color: var(--basic-white);
 .modal {
 	color: var(--basic-white);
 	background-color: var(--accent);
+}
+
+/* FAQ */
+.FAQ {
+	font-weight: bold;
+	color: var(--basic-gray);
+	background-color: transparent;
+}
+
+.FAQ-h1 a {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	color: var(--accent);
+}
+
+.FAQ-navigation {
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--headlines);
+	background-color: transparent;
+}
+
+.FAQ-navigation-wrapper {
+	list-style: none;
+	color: var(--basic-black);
+}
+
+.FAQ-navigation-wrapper a {
+	color: var(--basic-black);
+}
+
+.bread-crumbs a {
+	font-size: 32px;
+	line-height: 38px;
+	color: var(--basic-gray);
+}
+
+.bread-crumbs {
+	list-style: none;
+}
+
+.answers h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	color: var(--headlines);
+}
+
+.answers-items {
+	color: var(--accent);
+}
+
+.answers-items span {
+color: var(--basic-black);
 }
