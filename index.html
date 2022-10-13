@@ -11,12 +11,12 @@
 	<link rel="apple-touch-icon" href="/Users/anastasia/Documents/moto/img/label180.png">
 	<link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
+<body class="main-body">
 
 	<header>
-		<a>Moto Bali</a>
-		<nav>
-			<ul>
+		<a class="main-heder-logo">Moto <span>Bali</span></a>
+		<nav class="main-navigation">
+			<ul class="site-navigation-wrapper">
 				<li>Мотопарк</li>
 				<li>Тарифы</li>
 				<li><a href="FAQ.html">Частые вопросы</a></li>
@@ -28,18 +28,18 @@
 	<main>
 		<h1>Аренда мотоциклов</h1>
 		<img src="/Users/anastasia/Documents/moto/img/rectangle10.jpg" width="1440" height="1024" alt="Турист на мотоцикле возле достопримечательности на Бали">
-		<section>
+		<section class="products">
 			<h2>Еще варианты аренды</h2>
 			<ul>
 				<li>Велосипедов</li>
 				<li>Скутеров</li>
 			</ul>
-			<button type="button">Посмотреть все варианты</button>
+			<button class="button products-button" type="button">Посмотреть все варианты</button>
 		</section>
 
-		<section>
+		<section class="USP">
 			<h2>УТП</h2>
-			<ul>
+			<ul class="USP-items">
 				<li>Просто</li>
 				<li>Быстро</li>
 				<li>Понятно</li>
@@ -49,7 +49,7 @@
 			</ul>
 		</section>
 
-		<section>
+		<section class="navigation-social-networks">
 			<h2>Социальные сети</h2>
 			<nav>
 				<li>
@@ -74,28 +74,28 @@
 			</nav>
 		</section>
 
-		<section>
+		<section class="main-products">
 			<h2>Мотопарк</h2>
 			<nav>
-				<ul>
+				<ul class="main-products-items">
 					<li>Велосипеды</li>
 					<li>Мопеды</li>
 					<li>Скутеры</li>
 				</ul>
 			</nav>
 			<!--тут будет каталог-->
-			<figure>
+			<figure class="gallery-content">
 				<img src="/Users/anastasia/Documents/moto/img/rectangle15.jpg" width="400" height="400" alt="Harley-Davidson">
 				<img src="/Users/anastasia/Documents/moto/img/rectangle12.jpg" width="400" height="400" alt="BMW K100">
 				<img src="/Users/anastasia/Documents/moto/img/rectangle11.jpg" width="500" height="500" alt="BMW R 18">
 				<img src="/Users/anastasia/Documents/moto/img/rectangle13.jpg" width="500" height="500" alt="Triumph">
 				<div>
 					<img src="/Users/anastasia/Documents/moto/img/rectangle14.jpg" width="600" height="600" alt="Triumph Thruxton">
-					<dl>
-						<dt>Cafe Racer</dt>
-						<dd>Triumph thruxton</dd>
+					<dl class="characteristic-products">
+						<dt class="name-product">Cafe Racer</dt>
+						<dd class="kind-products">Triumph thruxton</dd>
 						<dd>
-							<ul>
+							<ul class="characteristic">
 								<li>Мощность 98 л.с.</li>
 								<li>Объем двигателя 1.2 л.</li>
 								<li>Объем бака 14,5 л.</li>
@@ -104,41 +104,47 @@
 					</dl>
 				</div>
 			</figure>
-			<button type="button">&lt;</button>
-			<button type="button">&gt;</button>
-			 <button type="button">Посмотреть тарифы</button>
+			<button type="gallery-button left">&lt;</button>
+			<button type="gallery-button right">&gt;</button>
+			 <button class="button main-products-button" type="button">Посмотреть тарифы</button>
 		</section>
 
-		<section>
+		<section class="tariffs">
 			<h2>Тарифы</h2>
-			<h3>Light</h3>
-			<ul>
-				<li>Пробег за сутки не более 100 км</li>
-				<li>Мотоциклы с объемом двигателя до 0.5 л</li>
-				<li>Страховка на 1 человека</li>
-			</ul>
-			</p>50$ в сутки</p>
-			<h3>Pro</h3>
-			<ul>
-				<li>Пробег за сутки не ограничен</li>
-				<li>Объем двигателя мотоциклов не ограничен</li>
-				<li>Страховка не ограничена</li>
-				<li>Сервис с выездом в любую точку о. Бали</li>
-			</ul>
-			</p>150$ в сутки<br>
-			или<br>
-			2900$ за месяц</p>
-			<h3>Medium</h3>
-			<ul>
-				<li>Пробег за сутки не более 250 км</li>
-				<li>Мотоциклы с объемом двигателя до 0.9 л</li>
-				<li>Страховка на 2 человек</li>
-			</ul>
-			</p>100$ в сутки</p>
+			<div class="light-tariffs">
+				<h3>Light</h3>
+				<ul>
+					<li class="tariffs-items"> <span>Пробег за сутки не более 100 км</span></li>
+					<li class="tariffs-items"><span>Мотоциклы с объемом двигателя до 0.5 л</span></li>
+					<li class="tariffs-items"><span>Страховка на 1 человека</span></li>
+				</ul>
+				</p><span>50$</span> в сутки</p>
+			</div>
+			<div class="pro-tariffs">
+				<h3><span>Pro</span></h3>
+				<ul>
+					<li class="tariffs-items-pro"><span>Пробег за сутки не ограничен</span></li>
+					<li class="tariffs-items-pro"><span>Объем двигателя мотоциклов не ограничен</span></li>
+					<li class="tariffs-items-pro"><span>Страховка не ограничена</span></li>
+					<li class="tariffs-items-pro"><span>Сервис с выездом в любую точку о. Бали</span></li>
+				</ul>
+				<p><span>150$</span> в сутки<br>
+				или<br>
+				<span>2900$</span> за месяц</p>
+			</div>
+			<div class="medium-tariffs">
+				<h3>Medium</h3>
+				<ul>
+					<li class="tariffs-items"><span>Пробег за сутки не более 250 км</span></li>
+					<li class="tariffs-items"><span>Мотоциклы с объемом двигателя до 0.9 л</span></li>
+					<li class="tariffs-items"><span>Страховка на 2 человек</span></li>
+				</ul>
+				</p><span>100$</span> в сутки</p>
+			</div>
 		</section>
 
-		<section>
-			<h2>Преимущества</h2>
+		<section class="features">
+			<h2>Почему стоит выбрать именно нас</h2>
 			<ul>
 				<li>
 					<img src="/Users/anastasia/Documents/moto/img/18.jpg" width="1026" height="678" alt="Мужчина в белой футболке на мотоцикле на пляже на Бали"><br>
@@ -148,78 +154,83 @@
 					<img src="/Users/anastasia/Documents/moto/img/19.jpg" width="1026" height="678" alt="Мужчина на Suzuki GN series едет по берегу моря на Бали"><br>
 					2 года<br>
 					0 негативных клиентов<br>
-					657 хороших отзывов
+					<span>657</span> хороших отзывов
 				</li>
 				<li>
 					<img src="/Users/anastasia/Documents/moto/img/20.jpg" width="1026" height="678" alt="Мужчина осматривает мотоцикл в гараже"><br>
 					3 Лучший сервис<br>
-					на острове
+					на <span>острове</span>
 				</li>
 			</ul>
 		</section>
 
-		<section>
+		<section class="contacts">
 			<h2>Контакты</h2>
 			<h3>Карта</h3>
 			<!--Здесь будет карта-->
-			<h3>Форма обратной связи</h3>
-			<p>Заполните форму обратной связи и мы с вами свяжемся в ближайшее время, 
-				наш менеджер поможет подобрать подходящее вам транспортное средство</p>
-			<form action="blank.html" metod="post">
-				<p>
-					<label for="name">Имя</label>
-					<input id="name">
-				</p>
-				<p>
-					<label for="telephone">Телефон</label>
-					<input id="telephone" type="tel">
-				</p>
-				<button type="submit">Отправить</button>
-			</form>
-			<h3>График работы</h3>
-			<ul>
-				<!--Надо сделать табличкой, чтобы разукрасить цвета-->
-				<li>пн-вт 09:00-21:00</li>
-				<li>сб-вс 11:00-19:00</li>
-			</ul>
+			<div class="form">
+				<h3>Форма обратной связи</h3>
+				<p>Заполните форму обратной связи и мы с вами свяжемся в ближайшее время, 
+					наш менеджер поможет подобрать подходящее вам транспортное средство</p>
+				<form class="appointment-form" action="blank.html" metod="post">
+					<p class="appointment-form-items">
+						<label for="name">Имя</label>
+						<input id="name">
+					</p>
+					<p class="appointment-form-items">
+						<label for="telephone">Телефон</label>
+						<input id="telephone" type="tel">
+					</p>
+					<button class="button contacts-button" type="submit">Отправить</button>
+				</form>
+			</div>
+			<div class="schedule">
+				<h3>График работы</h3>
+				<ul>
+					<li>пн-вт 09:00-21:00</li>
+					<li><span>сб-вс</span> 11:00-19:00</li>
+				</ul>
+			</div>
 		</section>
 	</main>
-		<footer>
-			<a>Moto Bali</a>
-			<p>
-				<ul>
+
+	<footer class="main-footer">
+		<a class="main-heder-logo">Moto <span>Bali</span></a>
+		<div>
+			<ul class="for-partners">
 				<li><a href="blank.html">Для партнеров</a></li>
 				<li><a href="blank.html">Правовые документы</a></li>
 			</ul>
-			</p>
-			<section>
-				<h2>Социальные сети</h2>
-				<nav>
-					<li>
-						<a href="#">
-							<img src="/Users/anastasia/Documents/moto/img/instagram.svg" width="30.99" height="31.71" alt="Instagram">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="/Users/anastasia/Documents/moto/img/linkedIn.svg" width="30.99" height="31.71" alt="LinkedIn">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="/Users/anastasia/Documents/moto/img/facebook.svg" width="30.99" height="31.71" alt="Facebook">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="/Users/anastasia/Documents/moto/img/youtube.svg" width="30.99" height="31.71" alt="Youtube">
-						</a></li>
-				</nav>
-			</section>
-		</footer>
-
-		<div>
-			<button type="button">Отличный выбор, заполнить контактные данные для связи с менеджером</button>
 		</div>
+		<section>
+			<h2>Социальные сети</h2>
+			<nav class="navigation-social-networks">
+				<li>
+					<a href="#">
+						<img src="/Users/anastasia/Documents/moto/img/instagram.svg" width="30.99" height="31.71" alt="Instagram">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/Users/anastasia/Documents/moto/img/linkedIn.svg" width="30.99" height="31.71" alt="LinkedIn">
+						</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/Users/anastasia/Documents/moto/img/facebook.svg" width="30.99" height="31.71" alt="Facebook">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/Users/anastasia/Documents/moto/img/youtube.svg" width="30.99" height="31.71" alt="Youtube">
+					</a>
+				</li>
+			</nav>
+		</section>
+	</footer>
+
+	<div class="modal">
+		<button class="button form-button" type="button">Отличный выбор, заполнить контактные данные для связи с менеджером</button>
+	</div>
 </body>
 </html>

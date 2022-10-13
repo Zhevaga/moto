@@ -18,21 +18,22 @@
 :root {
 	--basic-black:#000000;
 	--basic-white: #FFFFFF;
+	--basic-gray: #6D6D6D;
 	--headlines: #272727;
 	--accent: #1E991B;
 }
 
 /* Global */
 body {
-min-width: 1440px;
-margin: 0;
-padding: 0;
-font-family: "Gotham", Arial, sans-serif;
-font-size: 16px;
-line-height: 19px;
-font-weight: 400;
-color: var(--basic-white);
-background-color: var(--basic-black);
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: "Gotham", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
 }
 
 a {
@@ -42,4 +43,203 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	color: var(--accent);
+}
+
+.main-heder-logo {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+
+span {
+	color: var(--accent);
+}
+
+/* Main navigation */
+.main-navigation {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	/*background-color: transparent;*/
+	background-color: var(--basic-black);
+}
+
+.site-navigation-wrapper,
+.for-partners {
+	list-style: none;
+	color: var(--basic-white);
+}
+
+.site-navigation-wrapper a,
+.for-partners a {
+	color: var(--basic-white);
+}
+.navigation-social-networks{
+		/*background-color: transparent;*/
+	background-color: var(--basic-black);
+}
+
+.USP {
+	font-weight: 500;
+	font-size: 96px;
+	line-height: 115px;
+	color: var(--basic-white);
+	/*background-color: transparent;*/
+	background-color: var(--basic-black);
+}
+
+.USP-items {
+	list-style: none;
+}
+
+/* Main products */
+.gallery-content {
+	background-color: var(--accent);
+}
+.main-products-items {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	list-style: none;
+	color: var(--basic-gray);
+}
+
+.name-product {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 43px;
+	color: var(--basic-white);
+	/*background-color: transparent;*/
+	background-color: var(--basic-black);
+}
+
+.kind-products{
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 43px;
+	color: var(--basic-white);
+	/*background-color: transparent;*/
+	background-color: var(--basic-black);
+}
+
+.characteristic {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--basic-gray);
+}
+
+/* tariffs */
+
+.tariffs{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	background-color: var(--headlines);
+}
+
+.light-tariffs {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.light-tariffs h3 {
+	color: var(--headlines);
+}
+
+.tariffs-items {
+	color: var(--accent);
+}
+
+.tariffs-items span {
+color: var(--basic-black);
+}
+
+.pro-tariffs{
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+.tariffs-items-pro {
+	color: var(--accent);
+}
+
+.tariffs-items-pro span {
+color: var(--basic-white);
+}
+
+.medium-tariffs{
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.medium-tariffs h3 {
+	color: var(--headlines);
+}
+
+/* Button */
+.button {
+	font: inherit;
+	text-align: center;
+	color: var(--basic-white);
+	vertical-align: middle;
+	background-color: var(--accent);
+	border: none;
+}
+
+/* Contacts */
+
+.contacts {
+	background-color: var(--headlines);
+}
+
+.schedule {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+
+
+/* Form */
+.form {
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+
+.appointment-form-items {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.appointment-form-items input{
+	font: inherit;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	border: none;
+}
+
+/* footer */
+.main-footer{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+
+/* Modal */
+.modal {
+	color: var(--basic-white);
+	background-color: var(--accent);
 }
