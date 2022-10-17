@@ -24,7 +24,7 @@
 }
 
 /* Global */
-body {
+.page-body {
 	min-width: 1440px;
 	margin: 0;
 	padding: 0;
@@ -34,6 +34,14 @@ body {
 	font-weight: 500;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+	background-image: url("/Users/anastasia/Documents/moto/img/rectangle10.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
 a {
@@ -59,30 +67,60 @@ h2 {
 	color: var(--accent);
 }
 
-.main-heder-logo {
-	font-weight: bold;
-	font-size: 32px;
-	line-height: 38px;
-	color: var(--basic-white);
-	background-color: var(--basic-black);
-}
 
 span {
 	color: var(--accent);
 }
 
 
+/* Grid */
+.page {
+height: 100%;
+}
+
+/* Header */
+.main-header {
+	width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-header-logo {
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 38px;
+	color: var(--basic-white);
+	background-color: transparent;
+}
+
+.main-footer{
+	padding: 50px 0;
+	margin-top: 50px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+
+.conteiner {
+	width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 /* Main navigation */
 .main-navigation {
 	font-size: 20px;
 	line-height: 24px;
-	/*background-color: transparent;*/
-	background-color: var(--basic-black);
+	background-color: transparent;
 }
 
 .site-navigation-wrapper,
 .for-partners,
 .navigation-social-networks {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	color: var(--basic-white);
 }
@@ -105,6 +143,17 @@ span {
 }
 
 .USP-items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.products-items {
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	line-height: 43px;
+	color: var(--basic-white);
 	list-style: none;
 }
 
@@ -112,7 +161,10 @@ span {
 .gallery-content {
 	background-color: var(--accent);
 }
+
 .main-products-items {
+	margin: 0;
+	padding: 0;
 	font-size: 32px;
 	line-height: 38px;
 	list-style: none;
@@ -127,7 +179,7 @@ span {
 	background-color: var(--basic-black);
 }
 
-.kind-products{
+.kind-products {
 	font-weight: 300;
 	font-size: 36px;
 	line-height: 43px;
@@ -144,11 +196,17 @@ span {
 
 /* tariffs */
 
-.tariffs{
+.tariffs {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	background-color: var(--headlines);
+}
+
+.tariffs-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 40px;
 }
 
 .light-tariffs {
@@ -233,12 +291,34 @@ color: var(--basic-white);
 }
 
 /* footer */
-.main-footer{
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
+
+.main-footer .conteiner {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-logo {
+	margin: 0;
+	width: 500px;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 38px;
 	color: var(--basic-white);
-	background-color: var(--basic-black);
+	background-color: transparent;
+}
+
+.for-partners {
+	width: 700px;
+	justify-self: center;
+}
+
+.navigation-footer-networks {
+	max-width: 173;
+	margin: 0;
+	padding: 0;
+	justify-self: end;
+	list-style: none;
+	color: var(--basic-white);
 }
 
 /* Modal */
