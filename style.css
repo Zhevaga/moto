@@ -57,7 +57,7 @@ img {
 	font-size: 96px;
 	line-height: 115px;
 	color: var(--basic-white);
-	background-color: var(--basic-black);
+	background-color: transparent;
 }
 
 h2 {
@@ -65,6 +65,10 @@ h2 {
 	font-size: 48px;
 	line-height: 58px;
 	color: var(--accent);
+}
+
+.hidden {
+	display: none;
 }
 
 
@@ -328,10 +332,28 @@ color: var(--basic-white);
 }
 
 /* FAQ */
+.page-FAQ {
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: "Gotham", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 500;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
 .FAQ {
 	font-weight: bold;
 	color: var(--basic-gray);
 	background-color: transparent;
+}
+
+.FAQ a {
+	color: var(--basic-gray);
 }
 
 .FAQ-h1 a {
@@ -357,13 +379,15 @@ color: var(--basic-white);
 	color: var(--basic-black);
 }
 
-.bread-crumbs a {
+.more a {
 	font-size: 32px;
 	line-height: 38px;
 	color: var(--basic-gray);
 }
 
-.bread-crumbs {
+.more {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
