@@ -14,6 +14,14 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Orbitron";
+	src: url("/Users/anastasia/Documents/moto/Orbitron/Orbitron-Regular.woff2") format("woff2"),
+	url("/Users/anastasia/Documents/moto/Orbitron/Orbitron-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
 /* Variables */
 :root {
 	--basic-black:#000000;
@@ -28,20 +36,16 @@
 	min-width: 1440px;
 	margin: 0;
 	padding: 0;
-	font-family: "Gotham", Arial, sans-serif;
+	font-family: "Gotham", "Times New Roman", sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	font-weight: 500;
+	font-weight: bold;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 	background-image: url("/Users/anastasia/Documents/moto/img/rectangle10.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
-
-	min-height: 100%;
-	display: grid;
-	grid-template-rows: min-content 1fr min-content;
-	align-content: start;
 }
 
 a {
@@ -53,201 +57,15 @@ img {
 	height: auto;
 }
 
-.main-h1 {
-	font-size: 96px;
-	line-height: 115px;
-	color: var(--basic-white);
-	background-color: transparent;
-}
-
-h2 {
-	font-weight: 700;
-	font-size: 48px;
-	line-height: 58px;
-	color: var(--accent);
-}
-
-.hidden {
-	display: none;
-}
-
 span {
 	color: var(--accent);
 }
 
-
-/* Grid */
-.page {
-height: 100%;
-}
-
-/* Header */
-.main-header {
-	width: 1180px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
-.main-header-logo {
-	font-weight: bold;
-	font-size: 32px;
-	line-height: 38px;
-	color: var(--basic-white);
-	background-color: transparent;
-}
-
-.main-footer{
-	padding: 50px 0;
-	margin-top: 50px;
+.heading {
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
-	color: var(--basic-white);
-	background-color: var(--basic-black);
-}
-
-.conteiner {
-	width: 1180px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
-/* Main navigation */
-.main-navigation {
-	font-size: 20px;
-	line-height: 24px;
-	background-color: transparent;
-}
-
-.site-navigation-wrapper,
-.navigation-socials {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	color: var(--basic-white);
-}
-
-.site-navigation-wrapper a,
-.for-partners a {
-	color: var(--basic-white);
-}
-
-.navigation-socials{
-		/*background-color: transparent;*/
-	background-color: var(--basic-black);
-}
-
-.USP {
-	font-size: 96px;
-	line-height: 115px;
-	color: var(--basic-white);
-	/*background-color: transparent;*/
-	background-color: var(--basic-black);
-}
-
-.USP-items {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.products-items {
-	margin: 0;
-	padding: 0;
-	font-size: 36px;
-	line-height: 43px;
-	color: var(--basic-white);
-	list-style: none;
-}
-
-/* Main products */
-.gallery-content {
-	background-color: var(--accent);
-}
-
-.main-products-items {
-	margin: 0;
-	padding: 0;
-	font-size: 32px;
-	line-height: 38px;
-	list-style: none;
-	color: var(--basic-gray);
-}
-
-.name-product {
-	font-size: 36px;
-	line-height: 43px;
-	color: var(--basic-white);
-	/*background-color: transparent;*/
-	background-color: var(--basic-black);
-}
-
-.kind-products {
-	font-weight: 300;
-	font-size: 36px;
-	line-height: 43px;
-	color: var(--basic-white);
-	/*background-color: transparent;*/
-	background-color: var(--basic-black);
-}
-
-.characteristic {
-	font-size: 20px;
-	line-height: 24px;
-	color: var(--basic-gray);
-}
-
-/* tariffs */
-
-.tariffs {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	background-color: var(--headlines);
-}
-
-.tariffs-list {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 40px;
-}
-
-.light-tariffs {
-	color: var(--basic-black);
-	background-color: var(--basic-white);
-}
-
-.light-tariffs h3 {
-	color: var(--headlines);
-}
-
-.tariffs-items {
+	font-size: 48px;
+	line-height: 58px;
 	color: var(--accent);
-}
-
-.tariffs-items span {
-color: var(--basic-black);
-}
-
-.pro-tariffs{
-	color: var(--basic-white);
-	background-color: var(--basic-black);
-}
-.tariffs-items-pro {
-	color: var(--accent);
-}
-
-.tariffs-items-pro span {
-color: var(--basic-white);
-}
-
-.medium-tariffs{
-	color: var(--basic-black);
-	background-color: var(--basic-white);
-}
-
-.medium-tariffs h3 {
-	color: var(--headlines);
 }
 
 /* Button */
@@ -260,22 +78,272 @@ color: var(--basic-white);
 	border: none;
 }
 
-/* Contacts */
-
-.contacts {
-	background-color: var(--headlines);
-	display: grid;
-	grid-template-columns: 625px, 1fr;
+/* Logo */
+.logo {
+	font-size: 32px;
+	line-height: 38px;
+	color: var(--basic-white);
+	background-color: transparent;
 }
 
-.schedule {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 19px;
+/* Header */
+.nav-header-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	line-height: 24px;
 	color: var(--basic-white);
+}
+
+.nav-header-list a {
+	color: var(--basic-white);
+}
+
+/* Title */
+.title {
+	font-size: 96px;
+	line-height: 115px;
+	color: var(--basic-white);
+}
+
+/* Rent */
+.list-rent {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 36px;
+	line-height: 43px;
+	color: var(--basic-white);
+}
+
+.button .rent {
+	padding: 10px;
+}
+
+/* USP */
+.list-USP {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 96px;
+	line-height: 115px;
+	color: var(--accent);
+}
+
+.list-USP li:nth-child(-n+3) {
+	opacity: 0.3;
+	transform: rotate(-90deg);
+}
+
+.list-USP li:nth-child(n+4) {
+	opacity: 0.3;
+	transform: rotate(90deg);
+}
+
+/* Socials */
+.socials{
+background-color: var(--basic-gray);
+}
+
+.socials-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.socials-list a {
+	color: var(--basic-white);
+}
+
+/* Motopark */
+.motopark-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 32px;
+	line-height: 38px;
+	color: var(--headlines);
+}
+
+/* Gallery */
+.gallery-item {
 	background-color: var(--basic-black);
 }
 
+.name-item {
+	font-size: 36px;
+	line-height: 43px;
+	color: var(--basic-white);
+}
+
+.kind-item {
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 43px;
+	color: var(--basic-white);
+}
+
+.specification-item {
+	background-color: var(--basic-white);
+}
+
+.specification-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: var(--basic-gray);
+}
+
+.specification-list span {
+	font-family: "Orbitron", "Times New Roman", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	color: var(--basic-gray);
+}
+
+/* Tariffs */
+.tariffs {
+	background-color: var(--headlines);
+}
+
+.title-tariffs,
+.tariffs p {
+	text-align: center;
+}
+
+.light {
+	background-color: var(--basic-white);
+}
+
+.light-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: 400;
+	color: var(--basic-black);
+}
+
+.pro {
+	background-color: var(--basic-black);
+	color: var(--basic-white);
+}
+
+.pro-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: 400;
+}
+
+.pro span {
+	color: var(--accent);
+}
+
+.medium {
+	background-color: var(--basic-white);
+}
+
+.medium-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: 400;
+	color: var(--basic-black);
+}
+
+/* Features */
+.features-list {
+	font-weight: 700;
+	font-weight: bold;
+	color: var(--basic-white);
+}
+
+b {
+	color: var(--basic-black);
+}
+
+.trust {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 1026px;
+	height: 678px;
+	color: var(--basic-white);
+	background-image: url("/Users/anastasia/Documents/moto/img/18.jpg");
+}
+
+.trust li:nth-child(1) {
+	font-size: 96px;
+	line-height: 115px;
+}
+
+/*
+.trust li:nth-child(2) {
+	font-family: "Orbitron", "Times New Roman", sans-serif;;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 500px;
+	line-height: 627px;
+	color: var(--headlines);
+}
+*/
+
+.trust li:nth-child(3) {
+	font-size: 200px;
+	line-height: 240px;
+}
+
+.trust li:nth-child(3) span {
+	color: var(--headlines);
+}
+
+.trust li:nth-child(4) {
+	font-size: 64px;
+	line-height: 77px;
+}
+
+.trust li:nth-child(5) {
+	font-size: 48px;
+	line-height: 58px;
+} 
+
+.reviews {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 1026px;
+	height: 678px;
+	background-image: url("/Users/anastasia/Documents/moto/img/19.jpg");
+}
+
+/*
+.reviews li:nth-child(1) {
+	font-family: "Orbitron", "Times New Roman", sans-serif;;
+	font-size: 500px;
+	line-height: 627px;
+	font-size: 64px;
+	line-height: 77px;
+}
+*/
+
+.reviews li:nth-child(1) b {
+	font-size: 64px;
+	line-height: 77px;
+}
+
+.reviews li:nth-child(2)
+
+.service{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 1026px;
+	height: 678px;
+	background-image: url("/Users/anastasia/Documents/moto/img/20.jpg");
+}
 
 /* Form */
 .form {
@@ -295,119 +363,9 @@ color: var(--basic-white);
 	border: none;
 }
 
-/* footer */
-.main-footer .conteiner {
-	display: grid;
-	grid-template-columns: 1fr, 1fr, 1fr;
-}
-
-.footer-logo {
-	margin: 0;
-	font-weight: bold;
-	font-size: 32px;
-	width: 200px;
-	color: var(--basic-white);
-	background-color: transparent;
-}
-
-.for-partners {
-	width: 580px;
-	justify-self: center;
-}
-
-.for-partners ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	color: var(--basic-white);
-}
-
-.navigation-socials {
-	max-width: 200;
-	margin: 0;
-	padding: 0;
-	justify-self: end;
-	list-style: none;
-	color: var(--basic-white);
-}
 
 /* Modal */
 .modal {
 	color: var(--basic-white);
 	background-color: var(--accent);
-}
-
-/* FAQ */
-.page-FAQ {
-	min-width: 1440px;
-	margin: 0;
-	padding: 0;
-	font-family: "Gotham", Arial, sans-serif;
-	font-size: 16px;
-	line-height: 19px;
-	font-weight: 500;
-	color: var(--basic-black);
-	background-color: var(--basic-white);
-	background-position: top center;
-	background-repeat: no-repeat;
-}
-
-.FAQ {
-	font-weight: bold;
-	color: var(--basic-gray);
-	background-color: transparent;
-}
-
-.FAQ a {
-	color: var(--basic-gray);
-}
-
-.FAQ-h1 a {
-	font-weight: 700;
-	font-size: 48px;
-	line-height: 58px;
-	color: var(--accent);
-}
-
-.FAQ-navigation {
-	font-size: 20px;
-	line-height: 24px;
-	color: var(--headlines);
-	background-color: transparent;
-}
-
-.FAQ-navigation-wrapper {
-	list-style: none;
-	color: var(--basic-black);
-}
-
-.FAQ-navigation-wrapper a {
-	color: var(--basic-black);
-}
-
-.more a {
-	font-size: 32px;
-	line-height: 38px;
-	color: var(--basic-gray);
-}
-
-.more {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.answers h2 {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 29px;
-	color: var(--headlines);
-}
-
-.answers-items {
-	color: var(--accent);
-}
-
-.answers-items span {
-color: var(--basic-black);
 }
