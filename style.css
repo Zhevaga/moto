@@ -46,6 +46,11 @@
 	background-image: url("/Users/anastasia/Documents/moto/img/rectangle10.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
+
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
 a {
@@ -87,6 +92,17 @@ span {
 }
 
 /* Header */
+.main-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 70px;
+}
+
+.nav-header {
+	outline: 5px solid yellow;
+	outline-offset: -5px;
+}
+
 .nav-header-list {
 	margin: 0;
 	padding: 0;
@@ -435,6 +451,8 @@ line-height: 115px;
 .main-footer {
 	color: var(--basic-white);
 	background-color: var(--basic-black);
+	outline: 5px solid yellow;
+	outline-offset: -5px;
 }
 
 .more-list {
@@ -448,7 +466,6 @@ line-height: 115px;
 	line-height: 24px;
 	color: var(--basic-white);
 }
-
 
 /* Modal */
 .modal {
