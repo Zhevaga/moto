@@ -142,7 +142,7 @@ span {
 }
 
 /* Socials */
-.socials{
+.socials {
 background-color: var(--basic-gray);
 }
 
@@ -282,12 +282,13 @@ b {
 
 /*
 .trust li:nth-child(2) {
-	font-family: "Orbitron", "Times New Roman", sans-serif;;
+	font-family: "Orbitron", "Times New Roman", sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 500px;
 	line-height: 627px;
 	color: var(--headlines);
+	opacity: 0.1;
 }
 */
 
@@ -319,9 +320,11 @@ b {
 	background-image: url("/Users/anastasia/Documents/moto/img/19.jpg");
 }
 
-/*
+
 .reviews li:nth-child(1) {
-	font-family: "Orbitron", "Times New Roman", sans-serif;;
+	font-family: "Orbitron", "Times New Roman", sans-serif;
+}
+/*
 	font-size: 500px;
 	line-height: 627px;
 	font-size: 64px;
@@ -329,12 +332,30 @@ b {
 }
 */
 
+
+.reviews li:nth-child(-n+3) b {
+	font-family: "Gotham", "Times New Roman", sans-serif;
+	font-size: 40px;
+	line-height: 48px;
+}
+
 .reviews li:nth-child(1) b {
+	font-family: "Gotham", "Times New Roman", sans-serif;
 	font-size: 64px;
 	line-height: 77px;
 }
 
-.reviews li:nth-child(2)
+.reviews li:nth-child(2) {
+	font-family: "Orbitron", "Times New Roman", sans-serif;
+	font-size: 128px;
+	line-height: 161px;
+}
+
+.reviews span {
+	font-family: "Orbitron", "Times New Roman", sans-serif;
+	font-size: 128px;
+	line-height: 161px;
+}
 
 .service{
 	margin: 0;
@@ -345,22 +366,87 @@ b {
 	background-image: url("/Users/anastasia/Documents/moto/img/20.jpg");
 }
 
+.service li:nth-child(1) {
+	font-family: "Orbitron", "Times New Roman", sans-serif;
+	color: var(--headlines);
+	opacity: 0.1;
+}
+/*
+font-size: 500px;
+line-height: 627px;
+}
+*/
+
+.service li:nth-child(2) {
+font-size: 96px;
+line-height: 115px;
+}
+
+.service li:nth-child(3) {
+	font-size: 64px;
+	line-height: 77px;
+	}
+
+/* Contacts */
+.contacts {
+	font-weight: 700;
+	font-weight: bold;
+	background-color: var(--headlines);
+}
+
+
 /* Form */
-.form {
+.feedback {
 	color: var(--basic-white);
 	background-color: var(--basic-black);
 }
 
-.appointment-form-items {
+.feedback-form {
 	font-size: 20px;
 	line-height: 24px;
 }
 
-.appointment-form-items input{
+.feedback-form input{
 	font: inherit;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 	border: none;
+}
+
+.button .feedback-submit {
+	font: inherit;
+	text-align: center;
+	color: var(--basic-white);
+	vertical-align: middle;
+	background-color: var(--accent);
+}
+
+/* Schedule */
+.schedule {
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+.title-schedule {
+	font-size: 36px;
+	line-height: 43px;
+}
+
+/* Footer */
+.main-footer {
+	color: var(--basic-white);
+	background-color: var(--basic-black);
+}
+
+.more-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.more-list a {
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--basic-white);
 }
 
 
