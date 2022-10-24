@@ -1,23 +1,23 @@
 @font-face {
 	font-family: "Gotham";
-	src: url("/Users/anastasia/Documents/moto/Gotham/gotham.woff2") format("woff2"),
-	url("/Users/anastasia/Documents/moto/Gotham/gotham.woff") format("woff");
+	src: url("/Users/anastasia/Documents/moto/fonts/Gotham/gotham.woff2") format("woff2"),
+	url("/Users/anastasia/Documents/moto/fonts/Gotham/gotham.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url("/Users/anastasia/Documents/moto/Gotham/gotham-Medium.woff2") format("woff2"),
-	url("/Users/anastasia/Documents/moto/Gotham/gotham_Medium.woff") format("woff");
+	src: url("/Users/anastasia/Documents/moto/fonts/Gotham/gotham-Medium.woff2") format("woff2"),
+	url("/Users/anastasia/Documents/moto/fonts/Gotham/gotham_Medium.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Orbitron";
-	src: url("/Users/anastasia/Documents/moto/Orbitron/Orbitron-Regular.woff2") format("woff2"),
-	url("/Users/anastasia/Documents/moto/Orbitron/Orbitron-Regular.woff") format("woff");
+	src: url("/Users/anastasia/Documents/moto/fonts/Orbitron/Orbitron-Regular.woff2") format("woff2"),
+	url("/Users/anastasia/Documents/moto/fonts/Orbitron/Orbitron-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -73,6 +73,11 @@ span {
 	color: var(--accent);
 }
 
+/* Grid */
+.page {
+	height: 100%;
+}
+
 /* Button */
 .button {
 	font: inherit;
@@ -96,10 +101,10 @@ span {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 70px;
-}
-
-.nav-header {
-	outline: 5px solid yellow;
+	width: 1180px;
+	margin: 0 auto;
+	padding: 2% 0;
+	outline: 5px solid blue;
 	outline-offset: -5px;
 }
 
@@ -114,6 +119,17 @@ span {
 
 .nav-header-list a {
 	color: var(--basic-white);
+}
+
+/* main */
+.main-body {
+	outline: 5px solid yellow;
+	outline-offset: -5px;
+}
+
+.introduction {
+	outline: 5px solid gold;
+	outline-offset: -5px;
 }
 
 /* Title */
@@ -173,6 +189,11 @@ background-color: var(--basic-gray);
 }
 
 /* Motopark */
+.motopark {
+	outline: 5px solid brown;
+	outline-offset: -5px;
+}
+
 .motopark-list {
 	margin: 0;
 	padding: 0;
@@ -223,6 +244,8 @@ background-color: var(--basic-gray);
 /* Tariffs */
 .tariffs {
 	background-color: var(--headlines);
+	outline: 5px solid blueviolet;
+	outline-offset: -5px;
 }
 
 .title-tariffs,
@@ -271,6 +294,11 @@ background-color: var(--basic-gray);
 }
 
 /* Features */
+.features {
+	outline: 5px solid pink;
+	outline-offset: -5px;
+}
+
 .features-list {
 	font-weight: 700;
 	font-weight: bold;
@@ -408,6 +436,8 @@ line-height: 115px;
 	font-weight: 700;
 	font-weight: bold;
 	background-color: var(--headlines);
+	outline: 5px solid green;
+	outline-offset: -5px;
 }
 
 
@@ -448,10 +478,17 @@ line-height: 115px;
 }
 
 /* Footer */
-.main-footer {
-	color: var(--basic-white);
+.main-footer-background {
 	background-color: var(--basic-black);
-	outline: 5px solid yellow;
+}
+.main-footer {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	width: 1180px;
+	margin: 0 auto;
+	padding: 2% 0;
+	color: var(--basic-white);
+	outline: 5px solid red;
 	outline-offset: -5px;
 }
 
