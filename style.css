@@ -133,7 +133,6 @@ span {
 	margin: 0 auto;
 	padding: 2% 0;
 
-
 	display: grid;
 	grid-template-columns: 180px 820px 180px;
 	grid-template-rows: 28% 25% 25% 22%;
@@ -394,6 +393,7 @@ margin-right: 30px;
 	background-color: var(--basic-white);
 }
 
+
 .specification-list {
 	width: 600px;
 	min-height: 143px;
@@ -566,6 +566,8 @@ margin-right: 30px;
 }
 
 .features .heading {
+	box-sizing:border-box;
+	padding-left: 112px;
 	outline: 5px solid rgb(142, 23, 42);
 	outline-offset: -5px;
 }
