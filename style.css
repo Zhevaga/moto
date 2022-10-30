@@ -273,8 +273,6 @@ margin-right: 30px;
 	width: 1180px;
 	margin: 0 auto;
 	padding: 0;
-	outline: 5px solid brown;
-	outline-offset: -5px;
 }
 
 .motopark .bread-crumbs {
@@ -310,8 +308,6 @@ margin-right: 30px;
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
 	grid-template-rows: 80% 20%;
-	outline: 5px solid palegreen;
-	outline-offset: -5px;
 }
 
 .gallery-1, .gallery-2, .gallery-3, .gallery-4, .gallery-5, 
@@ -372,22 +368,20 @@ margin-right: 30px;
 	grid-row: 2;
 }
 
-.name-item {
+.name-item, .kind-item {
 	position: relative;
 	bottom: 680px;
 	margin: 0 30px;
 	font-size: 36px;
 	line-height: 43px;
+}
+
+.name-item {
 	color: var(--basic-white);
 }
 
 .kind-item {
-	position: relative;
-	bottom: 680px;
-	margin: 0 30px;
 	font-weight: 300;
-	font-size: 36px;
-	line-height: 43px;
 	color: var(--basic-white);
 }
 
@@ -407,6 +401,10 @@ margin-right: 30px;
 	padding: 0;
 	list-style: none;
 	color: var(--basic-gray);
+}
+
+.specification-list td {
+	border-bottom: 1px dashed var(--basic-gray);
 }
 
 .specification-list td:nth-child(2) {
@@ -461,8 +459,6 @@ margin-right: 30px;
 /* Tariffs */
 .tariffs {
 	background-color: var(--headlines);
-	outline: 5px solid blueviolet;
-	outline-offset: -5px;
 }
 
 .tariffs-list {
@@ -471,7 +467,7 @@ margin-right: 30px;
 	padding: 2% 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 40px;
+	column-gap: 40px;
 }
 
 .tariffs-list .heading {
@@ -562,70 +558,93 @@ margin-right: 30px;
 
 /* Features */
 .features {
-	width: 1180px;
 	margin: 0 auto;
-	padding: 2% 0;
+	padding: 0;
+	width: 1440px;
 	outline: 5px solid pink;
 	outline-offset: -5px;
 }
 
+.features .heading {
+	outline: 5px solid rgb(142, 23, 42);
+	outline-offset: -5px;
+}
+
 .features-list {
-	font-weight: 700;
+	height: 2151px;
 	font-weight: bold;
 	color: var(--basic-white);
+
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	row-gap: 60px;
+}
+
+.features-list ul {
+	outline: 5px solid red;
+	outline-offset: -5px;
 }
 
 b {
+	padding: 0 3px;
 	color: var(--basic-black);
 }
 
 .trust {
-	margin: 0;
 	padding: 0;
 	list-style: none;
-	width: 1026px;
 	height: 678px;
 	color: var(--basic-white);
 	background-image: url("/Users/anastasia/Documents/moto/img/18.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+
+	grid-row: 1;
+}
+
+.trust li {
+	font-weight: 900;
+	position: relative;
 }
 
 .trust li:nth-child(1) {
+	top: 234px;
 	font-size: 96px;
 	line-height: 115px;
 }
 
-
 .trust li:nth-child(2) {
+	bottom: 30px;
 	font-family: "Orbitron", "Times New Roman", sans-serif;
-	font-style: normal;
-	line-height: 100px;
-	font-size: 100px;
-	font-weight: 700;
-	color: var(--headlines);
-}
-/*
-	opacity: 0.1;
 	line-height: 627px;
 	font-size: 500px;
-*/
+	color: var(--headlines);
+	opacity: 0.1;
+}
 
 .trust li:nth-child(3) {
+	bottom: 405px;
 	font-size: 200px;
 	line-height: 240px;
 }
 
 .trust li:nth-child(3) span {
 	color: var(--headlines);
+	opacity: 0.1;
 }
 
 .trust li:nth-child(4) {
+	bottom: 460px;
 	font-size: 64px;
 	line-height: 77px;
+	text-align: center;
 }
 
 .trust li:nth-child(5) {
+	bottom: 470px;
 	font-size: 48px;
 	line-height: 58px;
+	text-align: center;
 } 
 
 .reviews {
@@ -635,11 +654,19 @@ b {
 	width: 1026px;
 	height: 678px;
 	background-image: url("/Users/anastasia/Documents/moto/img/19.jpg");
+
+	grid-row: 2;
 }
 
+.reviews li {
+	font-family: "Orbitron", "Times New Roman", sans-serif;
+	font-weight: 900;
+	position: relative;
+}
 
 .reviews li:nth-child(1) {
-	font-family: "Orbitron", "Times New Roman", sans-serif;
+	outline: 5px solid rgb(130, 203, 21);
+	outline-offset: -5px;
 }
 /*
 	font-size: 500px;
@@ -651,25 +678,25 @@ b {
 
 
 .reviews li:nth-child(-n+3) b {
-	font-family: "Gotham", "Times New Roman", sans-serif;
+	font-family: inherit;
 	font-size: 40px;
 	line-height: 48px;
 }
 
 .reviews li:nth-child(1) b {
-	font-family: "Gotham", "Times New Roman", sans-serif;
+	font-family: inherit;
 	font-size: 64px;
 	line-height: 77px;
 }
 
 .reviews li:nth-child(2) {
-	font-family: "Orbitron", "Times New Roman", sans-serif;
 	font-size: 128px;
 	line-height: 161px;
+	outline: 5px solid rgb(86, 116, 41);
+	outline-offset: -5px;
 }
 
 .reviews span {
-	font-family: "Orbitron", "Times New Roman", sans-serif;
 	font-size: 128px;
 	line-height: 161px;
 }
@@ -681,6 +708,8 @@ b {
 	width: 1026px;
 	height: 678px;
 	background-image: url("/Users/anastasia/Documents/moto/img/20.jpg");
+
+	grid-row: 3;
 }
 
 .service li:nth-child(1) {
