@@ -256,9 +256,9 @@
 						<a class="logo">Moto <span>Bali</span></a>
 						<a class="tel" href="tel:+79876543212">+7 987 654 32 12</a>
 					</div>
-					<img class="triangle" src="img/1.png" width="139px" height="46px">
+					<img class="triangle" src="img/1.svg" width="139px" height="46px">
+					<img class="icon-map" src="img/label180.png" width="50px" height="50px">
 				</div>
-				<!--Здесь будет карта-->
 				<div class="feedback">
 					<h3 class="title-feedback">Форма обратной связи</h3>
 					<p>Заполните форму обратной связи и мы с вами свяжемся в ближайшее время, 
@@ -266,23 +266,28 @@
 					<form class="feedback-form" action="blank.html" metod="post">
 						<p>
 							<label for="name">Имя</label>
-							<input id="name">
+							<input style="margin-top: 10px;" id="name">
 						</p>
 						<p>
 							<label for="telephone">Телефон</label>
-							<input id="telephone" type="tel">
+							<input style="margin-top: 10px;" id="telephone" type="tel">
 						</p>
 						<button class="button feedback-submit" type="submit">Отправить</button>
 					</form>
 				</div>
 				<div class="schedule">
 					<h3 class="title-schedule">График работы</h3>
-					<ul class="schedule-list">
-						<li>пн-вт 09:00-21:00</li>
-						<li><span>сб-вс</span> 11:00-19:00</li>
-					</ul>
+						<table class="schedule-list">
+							<tr class="weeksday">
+								<td>пн-вт</td>
+								<td>09:00-21:00</td>
+							</tr>
+							<tr class="weekend">
+								<td><span>сб-вс</span></td>
+								<td>11:00-19:00</td>
+							</tr>
+						</table>
 				</div>
-			</div>
 		</section>
 	</main>
 
