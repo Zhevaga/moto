@@ -1016,3 +1016,67 @@ b {
 	width: 400px;
 	min-height: 78px;
 }
+
+/* FQA */
+
+/* basic */
+.page-FAQ {
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: "Gotham", "Times New Roman", sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: bold;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+}
+
+/* Logo */
+.logo-FQA {
+	font-size: 32px;
+	line-height: 38px;
+	color: var(--headlines);
+	background-color: transparent;
+}
+
+/* Header */
+
+.header-FQA {
+	margin-bottom: 70px;
+	width: 1180px;
+	margin: 0 auto;
+	padding: 2% 0;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.nav-header-list-FQA {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--headlines);
+
+	display: flex;
+	align-items: stretch;
+}
+
+.nav-header-list-FQA li {
+	width: max-content;
+	margin-right: 40px;
+}
+
+.nav-header-list-FQA a {
+	color: var(--headlines);
+}
