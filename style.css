@@ -47,6 +47,7 @@
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
+	background-attachment: scroll;
 
 	min-height: 100%;
 	display: grid;
@@ -164,6 +165,7 @@ span {
 	height: 875px;
 	margin: 0 auto;
 	padding: 2% 0;
+	
 
 	display: grid;
 	grid-template-columns: 180px 820px 180px;
@@ -553,15 +555,22 @@ span {
 }
 
 .light-list li {
-	margin: 10px 0;
-}
-
-
-.light-list img, .pro-list img,
-.medium-list img {
 	position: relative;
-	top: 3px;
+	margin: 10px 0;
+	margin-left: 20px;
 }
+
+.light-list li::before {
+	content: "";
+	position: absolute;
+	left: -25px;
+	top: 1px;
+	width: 17px;
+	height: 17px;
+	background-color: var(--accent);
+	border-radius: 50%;
+}
+
 
 .light p {
 	margin: 46px 20px 30px 20px;
@@ -580,7 +589,20 @@ span {
 }
 
 .pro-list li {
+	position: relative;
 	margin: 10px 0;
+	margin-left: 20px;
+}
+
+.pro-list li::before {
+	content: "";
+	position: absolute;
+	left: -25px;
+	top: 1px;
+	width: 17px;
+	height: 17px;
+	background-color: var(--accent);
+	border-radius: 50%;
 }
 
 .pro p {
@@ -606,7 +628,20 @@ span {
 }
 
 .medium-list li {
+	position: relative;
 	margin: 10px 0;
+	margin-left: 20px;
+}
+
+.medium-list li::before {
+	content: "";
+	position: absolute;
+	left: -25px;
+	top: 1px;
+	width: 17px;
+	height: 17px;
+	background-color: var(--accent);
+	border-radius: 50%;
 }
 
 .medium p {
@@ -645,10 +680,10 @@ b {
 	height: 678px;
 
 	grid-row: 1;
+	position: relative;
 }
 
 .trust-list {
-	position: relative;
 	bottom: 700px;
 	padding: 0;
 	list-style: none;
@@ -663,7 +698,7 @@ b {
 
 .trust-list li {
 	font-weight: 900;
-	position: relative;
+	position: absolute;
 }
 
 .trust-list li:nth-child(1) {
@@ -674,8 +709,8 @@ b {
 }
 
 .trust-list li:nth-child(2) {
-	bottom: 30px;
-	padding-left: 150px;
+	left: 145px;
+	top: 50px;
 	font-family: "Orbitron", "Times New Roman", sans-serif;
 	line-height: 627px;
 	font-size: 500px;
@@ -684,8 +719,8 @@ b {
 }
 
 .trust-list li:nth-child(3) {
-	bottom: 405px;
-	padding-left: 310px;
+	top: 300px;
+	left: 310px;
 	font-size: 200px;
 	line-height: 240px;
 }
@@ -696,25 +731,24 @@ b {
 }
 
 .trust-list li:nth-child(4) {
-	bottom: 460px;
-	padding-left: 120px;
+	bottom: 100px;
+	left: 500px;
 	font-size: 64px;
 	line-height: 77px;
-	text-align: center;
 }
 
 .trust-list li:nth-child(5) {
-	bottom: 470px;
-	padding-left: 400px;
+	bottom: 50px;
+	right: 480px;
 	font-size: 48px;
 	line-height: 58px;
-	text-align: center;
 } 
 
 .reviews {
 	height: 678px;
 
 	grid-row: 2;
+	position: relative;
 }
 
 .background-reviews {
@@ -744,27 +778,25 @@ b {
 	font-size: 40px;
 	line-height: 48px;
 	list-style: none;
-	color: var(--headlines);
-
-	position: relative;
+	color: var(--headlines);;
 }
 
 .reviews-list li {
 	font-weight: 900;	
-	position: relative;
+	position: absolute;
 }
 
 .reviews-list li:nth-child(1) {
-	padding-right: 80px;
-	top: 80px;
+	top: 250px;
+	right: 70px;
 	font-size: 84px;
 	line-height: 77px;
 	text-align: right;
 }
 
 .reviews-list li:nth-child(2) {
-	padding-right: 190px;
-	top: 170px;
+	bottom: 120px;
+	right: 190px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -772,8 +804,8 @@ b {
 }
 
 .reviews-list li:nth-child(3) {
-	padding-right: 240px;
-	top: 150px;
+	bottom: 2px;
+	right: 245px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -803,10 +835,10 @@ b {
 	height: 678px;
 
 	grid-row: 3;
+	position: relative;
 }
 
 .service-list {
-	position: relative;
 	bottom: 600px;
 	padding: 0;
 	list-style: none;
@@ -825,10 +857,11 @@ b {
 .service-list li {
 	font-weight: 900;
 
-	position: relative;
+	position: absolute;
 }
 
 .service-list li:nth-child(1) {
+	bottom: -40px;
 	font-family: "Orbitron", "Times New Roman", sans-serif;
 	font-size: 500px;
 	line-height: 627px;
@@ -837,8 +870,8 @@ b {
 }
 
 .service-list li:nth-child(2) {
-	bottom: 250px;
-	padding-left: 20px;
+	bottom: 100px;
+	left: 10px;
 	font-size: 96px;
 	line-height: 115px;
 }
@@ -849,8 +882,8 @@ b {
 }
 
 .service-list li:nth-child(3) {
-	bottom: 270px;
-	text-align: center;
+	bottom: 15px;
+	right: 450px;
 	font-size: 64px;
 	line-height: 77px;
 	}
@@ -1245,7 +1278,20 @@ b {
 }
 
 .answers li {
+	position: relative;
 	margin: 10px 0;
+	margin-left: 20px;
+}
+
+.answers li::before {
+	content: "";
+	position: absolute;
+	left: -25px;
+	top: 1px;
+	width: 17px;
+	height: 17px;
+	background-color: var(--accent);
+	border-radius: 50%;
 }
 
 /* Free */
