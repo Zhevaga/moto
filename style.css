@@ -119,6 +119,7 @@ span {
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	z-index: 2;
 }
 
 .nav-header-list {
@@ -255,6 +256,11 @@ margin-right: 30px;
 
 	grid-column: 1;
 	grid-row: 5;
+}
+
+.nav-socials {
+	position: relative;
+	z-index: 2;
 }
 
 .socials-list {
