@@ -147,6 +147,8 @@ span {
 
 .nav-header-list a {
 	color: var(--basic-white);
+	display: block;
+	padding: 5px 5px;
 }
 
 .nav-header-list a:hover,
@@ -330,14 +332,18 @@ span {
 	position: relative;
 }
 
+.motopark-list a {
+	color: var(--basic-gray);
+}
+
 .motopark-list li {
 	width: max-content;
 	margin-right: 50px;
 	color: var(--basic-gray);
 }
 
-.motopark-list li:hover,
-.motopark-list li:active {
+.motopark-list a:hover,
+.motopark-list a:active {
 	color: var(--basic-white);
 	background-color: rgba(30, 153, 27, 0.3);
 }
@@ -549,6 +555,7 @@ span {
 .light-list li {
 	margin: 10px 0;
 }
+
 
 .light-list img, .pro-list img,
 .medium-list img {
@@ -946,6 +953,7 @@ b {
 .feedback-form input {
 	width: 100%;
 	height: 47px;
+	padding-left: 10px;
 	font: inherit;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
@@ -1036,9 +1044,12 @@ b {
 }
 
 .more-list a {
+	padding: 5px 5px;
 	font-size: 20px;
 	line-height: 24px;
 	color: var(--basic-white);
+
+	display: block;
 }
 
 .more-list a:hover,
@@ -1047,7 +1058,7 @@ b {
 }
 
 .more-list li {
-	margin: 10px 90px 0 0;
+	margin: 5px 90px 0 0;
 	padding: 0;
 	width: max-content;
 }
@@ -1126,6 +1137,8 @@ b {
 
 .nav-header-list-FAQ a {
 	color: var(--headlines);
+	display: block;
+	padding: 5px 5px;
 }
 
 .nav-header-list-FAQ a:hover,
@@ -1285,6 +1298,8 @@ b {
 
 .nav-header-list-free a {
 	color: var(--headlines);
+	display: block;
+	padding: 5px 5px;
 }
 
 .nav-header-list-free a:hover,
@@ -1297,7 +1312,6 @@ b {
 .conteiner {
 	margin: 0 auto;
 	padding: 0;
-	margin-top: 60px;
 
 	width: 1180px;
 	min-height: 500px;
@@ -1317,6 +1331,3 @@ b {
 	line-height: 58px;
 	color: var(--accent);
 }
-
-
-
