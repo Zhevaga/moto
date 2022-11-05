@@ -216,7 +216,6 @@ span {
 	grid-row: 1;
 }
 
-
 .list-left, .list-right {
 	list-style: none;
 	font-size: 96px;
@@ -247,7 +246,7 @@ span {
 }
 
 .list-right li {
-margin-right: 30px;
+	margin-right: 30px;
 }
 
 /* Socials */
@@ -276,7 +275,6 @@ margin-right: 30px;
 	margin-right: 15px;
 }
 
-
 /* Motopark */
 .motopark {
 	width: 1180px;
@@ -294,6 +292,7 @@ margin-right: 30px;
 }
 
 .motopark-list {
+	bottom: 5px;
 	margin: 60px 0;
 	padding: 0;
 	list-style: none;
@@ -303,6 +302,7 @@ margin-right: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
+	position: relative;
 }
 
 .motopark-list li {
@@ -516,6 +516,12 @@ margin-right: 30px;
 
 .light-list li {
 	margin: 10px 0;
+}
+
+.light-list img, .pro-list img,
+.medium-list img {
+	position: relative;
+	top: 3px;
 }
 
 .light p {
@@ -843,7 +849,6 @@ b {
 	grid-row: span 2;
 }
 
-
 .info-map {
 	margin-top: 47px;
 	margin-left: 42px;
@@ -973,7 +978,6 @@ b {
 	text-align: end;
 }
 
-
 /* Footer */
 .main-footer-background {
 	background-color: var(--basic-black);
@@ -1006,8 +1010,8 @@ b {
 }
 
 .more-list li {
-	margin-top: 14px;
-	margin-right: 90px;
+	margin: 10px 90px 0 0;
+	padding: 0;
 	width: max-content;
 }
 
@@ -1023,7 +1027,7 @@ b {
 	min-height: 78px;
 }
 
-/* FQA */
+/* FAQ */
 
 /* basic */
 .page-FAQ {
@@ -1047,7 +1051,7 @@ b {
 }
 
 /* Logo */
-.logo-FQA {
+.logo-FAQ {
 	font-size: 32px;
 	line-height: 38px;
 	color: var(--headlines);
@@ -1055,18 +1059,18 @@ b {
 }
 
 /* Header */
-
-.header-FQA {
+.header-FAQ {
 	margin-bottom: 70px;
 	width: 1180px;
 	margin: 0 auto;
 	padding: 2% 0;
+	padding-bottom: 0;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
-.nav-header-list-FQA {
+.nav-header-list-FAQ {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1078,11 +1082,106 @@ b {
 	align-items: stretch;
 }
 
-.nav-header-list-FQA li {
+.nav-header-list-FAQ li {
 	width: max-content;
 	margin-right: 40px;
 }
 
-.nav-header-list-FQA a {
+.nav-header-list-FAQ a {
 	color: var(--headlines);
+}
+
+/* Conteiner */
+.conteiner {
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 60px;
+
+	width: 1180px;
+	min-height: 755px;
+}
+
+/* Body */
+.bread-crumbs-FAQ {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+}
+
+/* Titile */
+.title-FAQ {
+	margin: 0;
+	padding-top: 22px;
+}
+
+.title-FAQ a {
+	font-size: 48px;
+	line-height: 58px;
+	color: var(--accent);
+
+	grid-column: 1;
+}
+
+.more {
+	grid-column: 2;
+}
+
+.more-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.more-item li {
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	font-size: 32px;
+	line-height: 38px;
+	list-style: none;
+}
+
+.more-item li:nth-child(1) {
+	margin-right: 50px;
+}
+
+.more-item a {
+	color: var(--basic-gray);
+}
+
+/* Answer */
+.answers {
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.answers h2 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.answers img {
+	position: relative;
+	top: 3px;
+}
+
+.answers section {
+	margin-bottom: 10px;
+}
+
+.documents-list, .terms-list,
+.luxury-list {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+
+	list-style: none;
+}
+
+.answers li {
+	margin: 10px 0;
 }
