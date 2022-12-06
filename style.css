@@ -571,7 +571,6 @@ span {
 	border-radius: 50%;
 }
 
-
 .light p {
 	margin: 46px 20px 30px 20px;
 }
@@ -579,6 +578,7 @@ span {
 .pro {
 	width: 400px;
 	height: 400px;
+	margin-bottom: 80px;
 	background-color: var(--basic-black);
 	color: var(--basic-white);
 }
@@ -646,6 +646,24 @@ span {
 
 .medium p {
 	margin: 46px 20px 30px 20px;
+}
+
+/* Modal */
+.modal {
+	color: var(--basic-white);
+	background-color: transparent;
+}
+
+.form-button {
+	padding: 20px;
+	width: 400px;
+	min-height: 78px;
+	visibility: hidden;
+}
+
+.light-button, .medium-button {
+	padding: 10px 0;
+	width: 350px;
 }
 
 /* Features */
@@ -1096,7 +1114,7 @@ b {
 	width: max-content;
 }
 
-/* Modal */
+/* Modal
 .modal {
 	color: var(--basic-white);
 	background-color: transparent;
@@ -1107,6 +1125,7 @@ b {
 	width: 400px;
 	min-height: 78px;
 }
+*/
 
 /* FAQ */
 
